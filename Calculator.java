@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
+        //inputs
         double num1 = 0;
         double num2 = 0;
         char operator;
@@ -13,6 +14,7 @@ public class Calculator {
         Scanner scanObject = new Scanner(System.in);
 
         try {
+            //collects all inputs
             System.out.println("Please enter first number: ");
             num1 = scanObject.nextDouble();
 
@@ -23,6 +25,7 @@ public class Calculator {
             operator = scanObject.next().charAt(0);
 
             switch (operator) {
+                //all operations
                 case '+':
                     answer = num1 + num2;
                     break;
